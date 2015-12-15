@@ -19,7 +19,7 @@ module WorldCat
     #
     # RDF properties are mapped via an ORM style mapping.
     # 
-    #   work = WorldCat::Identifiers::Work.find(http://worldcat.org/entity/work/id/15555393)
+    #   work = WorldCat::Identifiers::Work.find(http://worldcat.org/entity/work/id/67201841)
     #   work.name        # => "Programming Ruby."
     #
     # [subjects] RDF predicate: http://schema.org/about; returns: Enumerable of RDF::URI objects
@@ -32,7 +32,6 @@ module WorldCat
     # [genres] RDF predicate: http://schema.org/genre, returns: Enumerable of RDF::Literal objects
     # [names] RDF predicate: http://schema.org/name, returns: Enumerable of RDF::Literal objects
     # [work_examples] RDF predicate: http://schema.org/workExample; returns: Enumerable of WorldCat::Discovery::Bib objects
-    
     
     class Work < Spira::Base
       
@@ -100,14 +99,16 @@ module WorldCat
       end
       
       def self.oclc_numbers
-        work_graph = RDF::Repository.new.from_rdfxml(self.response_body)
+        work_group_store = self.load_work_group
         #run the sparql here to get what we want
+        oclc_numbers = SPARQL.execute("SELECT ?oclc_number WHERE {?s <http://purl.org/library/oclcnum> ?oclc_number.}", work_graph)
         
       end
       
       def self.isbns
         work_group_store = self.load_work_group
         # run the SPARQL here to get what we want
+        isbns = SPARQL.execute("SELECT ?isbn WHERE {?s <http://schema.org/isbn> ?isbn.}", work_graph)
       end
       
 
