@@ -1,0 +1,187 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:pto="http://www.productontology.org/id/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+    xmlns:discovery="http://worldcat.org/vocab/discovery/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" > 
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/xml_langage_de_balisage">
+    <schema:name>XML (langage de balisage).</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_architecture_logicielle">
+    <schema:name>REST (Architecture logicielle)</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/hojas_de_estilo_en_cascada">
+    <schema:name>Hojas de estilo en cascada.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_&amp;lt_informatik&amp;gt">
+    <schema:name>REST &amp;lt;Informatik&amp;gt;</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/sites_web_developpement">
+    <schema:name>Sites Web Développement.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/computers_web_web_programming">
+    <schema:name>COMPUTERS Web Web Programming.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://worldcat.org/entity/work/id/67201841">
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/660967222"/>
+    <schema:author rdf:resource="http://worldcat.org/entity/person/id/2637446024"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmatuurtechniek"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/websites"/>
+    <schema:alternateName>REST架构的网络服务</schema:alternateName>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/326799313"/>
+    <schema:creator rdf:resource="http://worldcat.org/entity/person/id/2632695367"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/886700555"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/conception_web"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/431591368"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/architecture_orientee_services"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/188235414"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/234290815"/>
+    <schema:author rdf:resource="http://worldcat.org/entity/person/id/2632695367"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/718524646"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/154684429"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/756523287"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/421705147"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/sites_web_developpement"/>
+    <schema:name>Services web RESTful : [des services web efficaces]</schema:name>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/computers_web_web_programming"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/481822502"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmierung"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/886581845"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/services_web"/>
+    <schema:name>Restfull web services</schema:name>
+    <schema:name>RESTful web services</schema:name>
+    <schema:name xml:lang="en">RESTful web services</schema:name>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/804438865"/>
+    <schema:name>Web-Services mit REST</schema:name>
+    <schema:contributor rdf:resource="http://worldcat.org/entity/person/id/2641050084"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/493390155"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/hojas_de_estilo_en_cascada"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/876558200"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/web_services"/>
+    <rdf:type rdf:resource="http://schema.org/Book"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_architecture_logicielle"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/884006311"/>
+    <schema:name>RESTful Web Services</schema:name>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/html_langage_de_balisage"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/768470693"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique_service_web"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/354466211"/>
+    <schema:about rdf:resource="http://id.worldcat.org/fast/1173242"/>
+    <schema:description xml:lang="en">You've built web sites that can be used by humans. But can you also build web sites that are usable by machines? That's where the future lies, and that's what this book shows you how to do. Today's web service technologies have lost sight of the simplicity that made the Web successful. This book explains how to put the Web" back into web services with REST, the architectural style that drives the Web."</schema:description>
+    <schema:name>Services Web RESTful</schema:name>
+    <schema:author rdf:resource="http://worldcat.org/entity/person/id/2641690132"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/255474401"/>
+    <schema:genre>Livres électroniques</schema:genre>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/82671871"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/web"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/754004270"/>
+    <schema:description>Shows how to use the REST architectural style to create web sites that can be used by computers as well as machines, providing basic rules for using REST and real-life examples of such Web services.</schema:description>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/xml_langage_de_balisage"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_&amp;lt_informatik&amp;gt"/>
+    <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatik"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/850798262"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/serveis_web"/>
+    <schema:contributor rdf:resource="http://worldcat.org/entity/person/id/2632695367"/>
+    <schema:name>Web Services mit REST</schema:name>
+    <schema:contributor rdf:resource="http://worldcat.org/entity/person/id/2651317527"/>
+    <schema:contributor rdf:resource="http://worldcat.org/entity/person/id/2742580806"/>
+    <schema:name>Web-Services mit REST : [frischer Wind für Web-Services durch REST]</schema:name>
+    <schema:name>RESTful web services : [web services for the real world]</schema:name>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/717007464"/>
+    <schema:alternateName xml:lang="en">REST jia gou de wang luo fu wu</schema:alternateName>
+    <schema:genre xml:lang="en">Electronic books</schema:genre>
+    <schema:contributor rdf:resource="http://worldcat.org/entity/person/id/2637446024"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/768120530"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/439080694"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/service_web"/>
+    <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/servicios_web"/>
+    <schema:about rdf:resource="http://id.loc.gov/authorities/subjects/sh2003001435"/>
+    <schema:workExample rdf:resource="http://www.worldcat.org/oclc/840398604"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmierung">
+    <schema:name>Programmierung.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/serveis_web">
+    <schema:name>Serveis web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest">
+    <schema:name>REST.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/websites">
+    <schema:name>Websites.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/web_services">
+    <schema:name>Web Services.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <schema:name>Web services.</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/service_web">
+    <schema:name>Service Web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <schema:name>service Web.</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique">
+    <schema:name>REST (informatique).</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <schema:name>REST (informatique)</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/servicios_web">
+    <schema:name>Servicios Web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <schema:name>Servicios web.</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique_service_web">
+    <schema:name>REST (informatique) service Web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/web">
+    <schema:name>Web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/services_web">
+    <schema:name>Services Web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/architecture_orientee_services">
+    <schema:name>Architecture orientée services.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841.rdf">
+    <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat/Works"/>
+    <schema:about rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/html_langage_de_balisage">
+    <schema:name>HTML (langage de balisage).</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatik">
+    <schema:name>REST (Informatik)</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/conception_web">
+    <schema:name>Conception Web.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmatuurtechniek">
+    <schema:name>Programmatuurtechniek.</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+  </rdf:Description>
+</rdf:RDF>
