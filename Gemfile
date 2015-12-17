@@ -1,10 +1,14 @@
 # Gemfile
 source 'https://rubygems.org'
  
-gem "rdf-turtle", "1.1.2"
-gem "nokogiri", "1.6.2.1"
-gem "oclc-auth", '0.1.1', :path => "vendor/gems/oclc-auth-0.1.1"
-gem "worldcat-discovery", '0.6.1', :path => "vendor/gems/worldcat-discovery-0.6.1"
+gem 'rdf-turtle', "1.1.2"
+gem 'nokogiri', "1.6.2.1"
+gem 'equivalent-xml', '~> 0.4', '>= 0.4.2'
+gem 'rdf', '~> 1.1', '>= 1.1.2.1'
+gem 'rdf-rdfxml', '~> 1.1', '>= 1.1.0.1'
+gem 'spira', '~> 0.7', '>= 0.7.1'
+gem 'rest-client', '~> 1.6', '>= 1.6.7'
+gem 'addressable', '~> 2.3', '>= 2.3.6'
 
 group :development, :test do
   # gem 'rspec', '2.13.0'
@@ -23,6 +27,11 @@ group :test do
   gem 'rack-test'
   
   gem 'capybara', '1.1.2'
+  
+  gem "bundler", "~> 1.3"
+  gem "rake"
+  
+  gem 'simplecov', '~> 0.8'
 
   ###### System-dependent gems goes below here
   ### Test gems on Macintosh OS X
