@@ -168,39 +168,39 @@ describe WorldCat::Identifiers::Work do
         stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
         @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/672018411')
         
-        stub_request(:get, 'http://www.worldcat.org/oclc/660967222').to_return(:body => body_content("bib_660967222.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/326799313').to_return(:body => body_content("bib_326799313.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/886700555').to_return(:body => body_content("bib_886700555.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/431591368').to_return(:body => body_content("bib_431591368.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/188235414').to_return(:body => body_content("bib_188235414.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/234290815').to_return(:body => body_content("bib_234290815.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/718524646').to_return(:body => body_content("bib_718524646.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/154684429').to_return(:body => body_content("bib_154684429.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/756523287').to_return(:body => body_content("bib_756523287.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/421705147').to_return(:body => body_content("bib_421705147.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/481822502').to_return(:body => body_content("bib_481822502.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/886581845').to_return(:body => body_content("bib_886581845.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/804438865').to_return(:body => body_content("bib_804438865.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/493390155').to_return(:body => body_content("bib_493390155.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/876558200').to_return(:body => body_content("bib_876558200.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/884006311').to_return(:body => body_content("bib_884006311.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/768470693').to_return(:body => body_content("bib_768470693.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/354466211').to_return(:body => body_content("bib_354466211.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/255474401').to_return(:body => body_content("bib_255474401.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/82671871').to_return(:body => body_content("bib_82671871.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/754004270').to_return(:body => body_content("bib_754004270.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/850798262').to_return(:body => body_content("bib_850798262.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/768120530').to_return(:body => body_content("bib_717007464.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/768120530').to_return(:body => body_content("bib_768120530.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/439080694').to_return(:body => body_content("bib_439080694.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/840398604').to_return(:body => body_content("bib_840398604.rdf"), :status => 200)
-        work_group_store = @work.load_work_group
+        stub_request(:get, 'http://www.worldcat.org/oclc/717007464').to_return(:body => body_content("717007464.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/660967222').to_return(:body => body_content("660967222.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/326799313').to_return(:body => body_content("326799313.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/886700555').to_return(:body => body_content("886700555.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/431591368').to_return(:body => body_content("431591368.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/188235414').to_return(:body => body_content("188235414.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/234290815').to_return(:body => body_content("234290815.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/718524646').to_return(:body => body_content("718524646.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/154684429').to_return(:body => body_content("154684429.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/756523287').to_return(:body => body_content("756523287.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/421705147').to_return(:body => body_content("421705147.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/481822502').to_return(:body => body_content("481822502.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/886581845').to_return(:body => body_content("886581845.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/804438865').to_return(:body => body_content("804438865.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/493390155').to_return(:body => body_content("493390155.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/876558200').to_return(:body => body_content("876558200.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/884006311').to_return(:body => body_content("884006311.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/768470693').to_return(:body => body_content("768470693.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/354466211').to_return(:body => body_content("354466211.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/255474401').to_return(:body => body_content("255474401.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/82671871').to_return(:body => body_content("82671871.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/754004270').to_return(:body => body_content("754004270.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/850798262').to_return(:body => body_content("850798262.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/768120530').to_return(:body => body_content("717007464.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/768120530').to_return(:body => body_content("768120530.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/439080694').to_return(:body => body_content("439080694.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/840398604').to_return(:body => body_content("840398604.rdf"), :status => 200)
       end
         
       it "should have the right oclc_numbers" do
         oclc_numbers = @work.oclc_numbers
-        oclc_numbers.size.should == 26
-        puts oclc_numbers.inspect
+        oclc_numbers.size.should == 25
+        oclc_numbers = ["660967222", "82671871", "326799313", "886700555", "431591368", "188235414", "234290815", "718524646", "154684429", "756523287", "421705147", "481822502", "886581845", "804438865", "493390155", "876558200", "884006311", "768470693", "354466211", "754004270", "850798262", "717007464", "768120530", "439080694", "840398604"]        
       end
       
       it "should have the right isbns" do

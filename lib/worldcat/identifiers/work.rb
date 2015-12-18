@@ -97,28 +97,30 @@ module WorldCat
         end
       end
       
-      def self.load_work_group
+      def load_work_group
         ## load all the data from the OCLC Numbers in the work into the graph
         work_group_store = RDF::Repository.new.from_rdfxml(self.response_body)
         self.work_examples.each{|work_example|
-          response, result = WorldCat::Identifiers.get_data(work_example)
-          work_group_store.from_rdf_xml(response)
+          #response, result = WorldCat::Identifiers.get_data(work_example.id.to_s) 
+          # there might be a different way to do this to loop through the statements and add them to the graph
+          work_group_store.load(work_example.id.to_s)
         }
         work_group_store
         
       end
       
-      def self.oclc_numbers
+      def oclc_numbers
         work_group_store = self.load_work_group
         #run the sparql here to get what we want
-        oclc_numbers = SPARQL.execute("SELECT ?oclc_number WHERE {?s <http://purl.org/library/oclcnum> ?oclc_number.}", work_graph)
-        
+        results = SPARQL.execute("SELECT ?oclc_number WHERE {?s <http://purl.org/library/oclcnum> ?oclc_number.}", work_group_store)
+        oclc_numbers = results.map{|result| result.oclc_number.value}
       end
       
-      def self.isbns
+      def isbns
         work_group_store = self.load_work_group
         # run the SPARQL here to get what we want
-        isbns = SPARQL.execute("SELECT ?isbn WHERE {?s <http://schema.org/isbn> ?isbn.}", work_graph)
+        results = SPARQL.execute("SELECT ?isbn WHERE {?s <http://schema.org/isbn> ?isbn.}", work_group_store)
+        isbns = results.map{|result| result.isbns.value}
       end
       
 
