@@ -66,7 +66,6 @@ module WorldCat
       property :same_as, :predicate => SCHEMA_SAME_AS, :type => RDF::URI
       property :language, :predicate => SCHEMA_IN_LANGUAGE, :type => XSD.string
       property :publisher, :predicate => SCHEMA_PUBLISHER, :type => 'Organization'
-      property :display_position, :predicate => GOOD_RELATIONS_POSITION, :type => XSD.integer
       property :book_edition, :predicate => SCHEMA_BOOK_EDITION, :type => XSD.string
       property :url, :predicate => SCHEMA_URL, :type => RDF::URI
       has_many :urls, :predicate => SCHEMA_URL, :type => RDF::URI

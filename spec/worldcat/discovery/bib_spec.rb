@@ -22,7 +22,7 @@ describe WorldCat::Identifiers::Bib do
       before(:all) do
         url = 'http://worldcat.org/oclc/30780581'
         stub_request(:get, url).to_return(:body => body_content("30780581.rdf"), :status => 200)
-        @bib = WorldCat::Identifiers::Bib.find(30780581)
+        @bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/30780581')
       end
 
       it "should have the right id" do
@@ -41,10 +41,11 @@ describe WorldCat::Identifiers::Bib do
         @bib.work_uri.should == RDF::URI.new('http://worldcat.org/entity/work/id/45185752')
       end
 
-      it "should have the right number of pages" do
-        @bib.num_pages.should == "312"
-      end
-
+      #deprecated property
+      #it "should have the right number of pages" do
+      #   @bib.num_pages.should == "312"
+      #end
+      
       it "should have the right date published" do
         @bib.date_published.should == "1994"
       end
@@ -53,9 +54,10 @@ describe WorldCat::Identifiers::Bib do
         @bib.type.should == RDF::URI.new('http://schema.org/Book')
       end
 
-      it "should have the right OWL same as property" do
-        @bib.same_as.should == RDF::URI.new("info:oclcnum/30780581")
-      end
+      #deprecated property
+      #it "should have the right OWL same as property" do
+      #  @bib.same_as.should == RDF::URI.new("info:oclcnum/30780581")
+      #end
 
       it "should have the right language" do
         @bib.language.should == "en"
@@ -143,15 +145,15 @@ describe WorldCat::Identifiers::Bib do
       end
 
       it "should have the right isbns" do
-        @bib.isbns.sort.should == ['9780631193616', '9780631193623']
+        @bib.isbns.sort.should == ["0631193618", "0631193626", "9780631193616", "9780631193623"]
       end
     end
 
     context "from a single resource from the RDF data for The Big Typescript" do
       before(:all) do
-        url = 'http://worldcat.org/oclc//57422379'
+        url = 'http://worldcat.org/oclc/57422379'
         stub_request(:get, url).to_return(:body => body_content("57422379.rdf"), :status => 200)
-        @bib = WorldCat::Identifiers::Bib.find(57422379)
+        @bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/57422379')
       end
 
       it "should have the right book edition" do
@@ -173,7 +175,7 @@ describe WorldCat::Identifiers::Bib do
       it "should handle books with no author" do
         url = 'http://worldcat.org/oclc/45621749'
         stub_request(:get, url).to_return(:body => body_content("45621749.rdf"), :status => 200)
-        bib = WorldCat::Identifiers::Bib.find(45621749)
+        bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/45621749')
 
         bib.author.should == nil
       end
@@ -181,7 +183,7 @@ describe WorldCat::Identifiers::Bib do
       it "should handle authors that are organizations" do
         url = 'http://worldcat.org/oclc/233192257'
         stub_request(:get, url).to_return(:body => body_content("233192257.rdf"), :status => 200)
-        bib = WorldCat::Identifiers::Bib.find(233192257)
+        bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/233192257')
 
         bib.author.class.should == WorldCat::Identifiers::Organization
         bib.author.name.should == "United States. National Park Service."
@@ -192,7 +194,7 @@ describe WorldCat::Identifiers::Bib do
       it "should have the correct author data" do
         url = 'http://worldcat.org/oclc/30780581'
         stub_request(:get, url).to_return(:body => body_content("30780581-v1.rdf"), :status => 200)
-        bib = WorldCat::Identifiers::Bib.find(30780581)
+        bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/30780581')
 
         bib.author.class.should == WorldCat::Identifiers::Person
         bib.author.name.should == "Wittgenstein, Ludwig, 1889-1951."

@@ -19,34 +19,22 @@ module WorldCat
     #
     # RDF properties are mapped via an ORM style mapping.
     # 
-    # [isbn] RDF predicate: http://schema.org/isbn; returns: RDF::URI
+    # [type] RDF predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type; returns: RDF::URI
     # [name] RDF predicate: http://schema.org/name; returns: String
-    # [types] RDF predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type; returns: Enumerable of RDF::URI objects
     
-    class ProductModel < Spira::Base
+    class Place < Spira::Base
       
       property :name, :predicate => SCHEMA_NAME, :type => XSD.string
-      property :isbn, :predicate => SCHEMA_ISBN, :type => XSD.string
-      has_many :types, :predicate => RDF.type, :type => RDF::URI
-      has_many :isbns, :predicate => SCHEMA_ISBN, :type => XSD.string 
+      property :type, :predicate => RDF.type, :type => RDF::URI
       
       # call-seq:
       #   id() => RDF::URI
       # 
-      # Will return the RDF::URI object that serves as the RDF subject of the current ProductModel
+      # Will return the RDF::URI object that serves as the RDF subject of the current Place
       def id
         self.subject
       end
-      
-      
-      # call-seq:
-      #   type() => RDF::URI
-      # 
-      # Will return the primary type as RDF::URI object as http://schema.org/ProductModel
-      def type
-        SCHEMA_PRODUCT_MODEL
-      end
-      
+
     end
   end
 end

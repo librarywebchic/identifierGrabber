@@ -13,7 +13,7 @@
 # limitations under the License.
 
 module WorldCat
-  module Discovery
+  module Identifiers
     
     # == Properties mapped from RDF data
     #

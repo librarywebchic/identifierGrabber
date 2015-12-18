@@ -38,14 +38,14 @@ module WorldCat
       attr_accessor :response_body, :response_code, :result
       
       has_many :subjects, :predicate => SCHEMA_ABOUT, :type => RDF::URI
-      has_many :alternate_name, :predicate => SCHEMA_ALT_NAME, :type => RDF::Literal
+      # has_many :alternate_name, :predicate => SCHEMA_ALT_NAME, :type => RDF::Literal
       has_many :types, :predicate => RDF.type, :type => RDF::URI
       has_many :authors, :predicate => SCHEMA_AUTHOR, :type => RDF::URI
       has_many :contributors, :predicate => SCHEMA_CONTRIBUTOR, :type => RDF::URI
       has_many :creators, :predicate => SCHEMA_CREATOR, :type => RDF::URI
       has_many :descriptions, :predicate => SCHEMA_DESCRIPTION, :type => XSD.string
-      has_many :genres, :predicate => SCHEMA_GENRE, :type => RDF::Literal
-      has_many :names, :predicate => SCHEMA_NAME, :type => RDF::Literal
+      # has_many :genres, :predicate => SCHEMA_GENRE, :type => RDF::Literal
+      # has_many :names, :predicate => SCHEMA_NAME, :type => RDF::Literal
       has_many :work_examples, :predicate => SCHEMA_WORK_EXAMPLE, :type => 'Bib'
           
       
@@ -56,13 +56,26 @@ module WorldCat
       def id
         self.subject
       end
+      
+      def alternate_names
+        alternative_names = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_ALT_NAME)
+      end
+      
+      def genres
+        genres = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_GENRE)
+      end
+      
+      def names
+        names = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_NAME)
+      end
+      
                        
       # call-seq:
       #   find(work_uri) => WorldCat::Identifiers::Work
       # 
       # Returns a Work resource for the given Work URI
       #
-      # [bib_uri] the URI for a bibliographic resource in WorldCat
+      # [work_uri] the URI for a bibliographic resource in WorldCat
       def self.find(work_uri)
         url = work_uri
         response, result = WorldCat::Identifiers.get_data(url)
