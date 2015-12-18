@@ -1,0 +1,147 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:umbel="http://umbel.org/umbel#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:pto="http://www.productontology.org/id/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:bgn="http://bibliograph.net/"
+    xmlns:schema="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/188235414#CreativeWork/unidentifiedOriginalWork">
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:inLanguage>en</schema:inLanguage>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Farnham</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/paris">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Paris</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/gw">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>gw</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/006.76/e22/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/taipei">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Taipei</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/cambridge">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Cambridge</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/tokyo">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Tokyo</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/188235414">
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/188235414"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol"/>
+        <schema:bookFormat rdf:resource="http://bibliograph.net/PrintBook"/>
+        <schema:name xml:lang="de">Web-Services mit REST : [frischer Wind für Web-Services durch REST]</schema:name>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9783897217270"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham"/>
+        <schema:url rdf:resource="http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&doc_number=016173795&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:author rdf:resource="http://viaf.org/viaf/119908940"/>
+        <library:oclcnum>188235414</library:oclcnum>
+        <bgn:translationOfWork rdf:resource="http://www.worldcat.org/title/-/oclc/188235414#CreativeWork/unidentifiedOriginalWork"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/188235414#PublicationEvent/beijing_cambridgefarnhamkolnparissebastopoltaipeitokyo_o_reilly_2007"/>
+        <schema:author rdf:resource="http://viaf.org/viaf/29849197"/>
+        <schema:inLanguage>de</schema:inLanguage>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/cambridge"/>
+        <schema:about rdf:resource="http://dewey.info/class/006.76/e22/"/>
+        <rdfs:seeAlso rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#CreativeWork/restful_web_services"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/taipei"/>
+        <umbel:isLike rdf:resource="http://d-nb.info/985306017"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/gw"/>
+        <schema:author rdf:resource="http://viaf.org/viaf/311578392"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/koln"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/tokyo"/>
+        <schema:bookEdition>Dt. Ausg., 1. Aufl.</schema:bookEdition>
+        <schema:datePublished>2007</schema:datePublished>
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatik"/>
+        <schema:productID>188235414</schema:productID>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/paris"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/311578392">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Demmig</schema:familyName>
+        <schema:givenName>Thomas</schema:givenName>
+        <schema:name>Thomas Demmig</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/188235414#PublicationEvent/beijing_cambridgefarnhamkolnparissebastopoltaipeitokyo_o_reilly_2007">
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/paris"/>
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:startDate>2007</schema:startDate>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/taipei"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/cambridge"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/tokyo"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/koln"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Sam Ruby</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/188235414">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/188235414"/>
+        <schema:dateModified>2015-08-23</schema:dateModified>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Sebastopol</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Leonard Richardson</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#CreativeWork/restful_web_services">
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:name>RESTful web services.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9783897217270">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:isbn>9783897217270</schema:isbn>
+        <schema:isbn>3897217279</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Beijing</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatik">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name xml:lang="de">REST <Informatik></schema:name>
+        <schema:name xml:lang="de">REST (Informatik)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/koln">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Köln</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,80 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/660967222">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/660967222"/>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/660967222">
+        <schema:numberOfPages>419</schema:numberOfPages>
+        <schema:inLanguage>en</schema:inLanguage>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <library:oclcnum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">660967222</library:oclcnum>
+        <schema:about rdf:resource="http://id.worldcat.org/fast/1173242"/>
+        <schema:about rdf:resource="http://dewey.info/class/006.76/e22/"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/660967222#PublicationEvent/nanjing_southeast_university_press_c2007"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/660967222"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/cc"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/nanjing"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9787564109608"/>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/29849197"/>
+        <schema:name xml:lang="en">RESTful web services</schema:name>
+        <schema:creator rdf:resource="http://viaf.org/viaf/119908940"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/southeast_university_press"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:copyrightYear>2007</schema:copyrightYear>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/cc">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>cc</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/nanjing">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Nanjing</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Ruby, Sam.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Richardson, Leonard, 1979-</schema:name>
+        <schema:birthDate>1979</schema:birthDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/southeast_university_press">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>Southeast University Press</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/006.76/e22/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/660967222#PublicationEvent/nanjing_southeast_university_press_c2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/nanjing"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/southeast_university_press"/>
+        <schema:startDate>c2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.worldcat.org/fast/1173242">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name xml:lang="en">Web services.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9787564109608">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:isbn>9787564109608</schema:isbn>
+        <schema:isbn>7564109602</schema:isbn>
+    </rdf:Description>
+</rdf:RDF>

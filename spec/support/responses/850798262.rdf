@@ -1,0 +1,136 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol_calif">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Sebastopol, Calif</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/surveillance_de_reseaux_systemes_informatiques">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>SURVEILLANCE DE RÉSEAUX (SYSTÈMES INFORMATIQUES)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/850798262">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/850798262"/>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/network_monitoring_computer_systems">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>NETWORK MONITORING (COMPUTER SYSTEMS)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/specialized_reference_works_+_specialized_encyclopaedias_+_handbooks_document_type">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>SPECIALIZED REFERENCE WORKS + SPECIALIZED ENCYCLOPAEDIAS + HANDBOOKS (DOCUMENT TYPE)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:bookFormat rdf:resource="http://schema.org/Paperback"/>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/850798262">
+        <rdf:value rdf:parseType="Literal">Unknown value: dct</rdf:value>
+        <schema:bookFormat rdf:resource="http://schema.org/EBook"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/119908940"/>
+        <schema:inLanguage>en</schema:inLanguage>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/fachliche_nachschlagewerke_+_fachlexika_+_handbucher_dokumententyp"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/internet_+_world_wide_web_computersysteme"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/850798262"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/internet_+_world_wide_web_computer_systems"/>
+        <schema:about rdf:resource="http://dewey.info/class/006.76/"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/netzwerkuberwachung_+_netzwerkadministration_computersysteme"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol_calif"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/h_3"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/specialized_reference_works_+_specialized_encyclopaedias_+_handbooks_document_type"/>
+        <library:oclcnum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850798262</library:oclcnum>
+        <schema:about rdf:resource="http://id.worldcat.org/fast/1173242"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/surveillance_de_reseaux_systemes_informatiques"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/850798262#PublicationEvent/sebastopol_calif_o_reilly_2007"/>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/29849197"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <rdf:type rdf:resource="http://schema.org/MediaObject"/>
+        <schema:name>RESTful web services</schema:name>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/network_monitoring_computer_systems"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/internet_+_world_wide_web_reseaux_informatiques"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/ouvrages_de_reference_specialises_+_encyclopedies_specialisees_+_manuels_type_de_document"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/web_services"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/850798262#PublicationEvent/sebastopol_calif_o_reilly_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol_calif"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/internet_+_world_wide_web_computersysteme">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>INTERNET + WORLD WIDE WEB (COMPUTERSYSTEME)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/web_services">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>Web Services</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/ouvrages_de_reference_specialises_+_encyclopedies_specialisees_+_manuels_type_de_document">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>OUVRAGES DE RÉFÉRENCE SPÉCIALISÉS + ENCYCLOPÉDIES SPÉCIALISÉES + MANUELS (TYPE DE DOCUMENT)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Ruby, Sam.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/cau">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>cau</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/internet_+_world_wide_web_computer_systems">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>INTERNET + WORLD WIDE WEB (COMPUTER SYSTEMS)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Richardson, Leonard.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/netzwerkuberwachung_+_netzwerkadministration_computersysteme">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>NETZWERKÜBERWACHUNG + NETZWERKADMINISTRATION (COMPUTERSYSTEME)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/h_3">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>H.3</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/internet_+_world_wide_web_reseaux_informatiques">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>INTERNET + WORLD WIDE WEB (RÉSEAUX INFORMATIQUES)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/fachliche_nachschlagewerke_+_fachlexika_+_handbucher_dokumententyp">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>FACHLICHE NACHSCHLAGEWERKE + FACHLEXIKA + HANDBÜCHER (DOKUMENTENTYP)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/006.76/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.worldcat.org/fast/1173242">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Web services.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+</rdf:RDF>

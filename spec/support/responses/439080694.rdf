@@ -1,0 +1,91 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/439080694#PublicationEvent/sebastopol_ca_o_reilly_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol_ca"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/439080694">
+        <schema:name>RESTful web services</schema:name>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Thing/web"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <library:oclcnum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">439080694</library:oclcnum>
+        <schema:author rdf:resource="http://viaf.org/viaf/119908940"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:about rdf:resource="http://dewey.info/class/006.76/e22/"/>
+        <schema:inLanguage>en</schema:inLanguage>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/439080694"/>
+        <schema:about rdf:resource="http://id.worldcat.org/fast/1173242"/>
+        <schema:author rdf:resource="http://viaf.org/viaf/29849197"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+        <schema:contributor rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Person/heinemeier_hanson_david"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/439080694#PublicationEvent/sebastopol_ca_o_reilly_2007"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol_ca"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/006.76/e22/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:description>broš.</schema:description>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol_ca">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Sebastopol, CA</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/439080694">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/439080694"/>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Ruby, Sam.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/cau">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>cau</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Person/heinemeier_hanson_david">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Heinemeier Hanson</schema:familyName>
+        <schema:givenName>David</schema:givenName>
+        <schema:name>Heinemeier Hanson, David.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Richardson, Leonard, 1979-</schema:name>
+        <schema:birthDate>1979</schema:birthDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Thing/web">
+        <rdf:type rdf:resource="http://schema.org/Thing"/>
+        <schema:name>Web</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.worldcat.org/fast/1173242">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Web services.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+</rdf:RDF>

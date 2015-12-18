@@ -1,0 +1,82 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:pto="http://www.productontology.org/id/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/websites">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Websites</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/840398604">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/840398604"/>
+        <schema:dateModified>2015-07-22</schema:dateModified>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/web_services">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Web services</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Sam Ruby</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/840398604#PublicationEvent/beijing_o_reilly_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Leonard Richardson</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Beijing</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/840398604">
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/web_services"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:inLanguage>en</schema:inLanguage>
+        <library:oclcnum>840398604</library:oclcnum>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmatuurtechniek"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:name>Restfull web services.</schema:name>
+        <schema:creator rdf:resource="http://viaf.org/viaf/119908940"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/websites"/>
+        <schema:bookFormat rdf:resource="http://bibliograph.net/PrintBook"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:productID>840398604</schema:productID>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/29849197"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/840398604#PublicationEvent/beijing_o_reilly_2007"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/840398604"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmatuurtechniek">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Programmatuurtechniek</schema:name>
+    </rdf:Description>
+</rdf:RDF>

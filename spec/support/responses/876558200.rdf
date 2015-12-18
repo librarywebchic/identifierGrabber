@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/876558200#PublicationEvent/sebastopol_o_reilly_c2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>c2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/xxu">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>xxu</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Person/ruby_sam">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Ruby, Sam.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Person/richardson_leonard">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Richardson, Leonard.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/876558200">
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+        <schema:creator rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Person/richardson_leonard"/>
+        <schema:name>RESTful web services</schema:name>
+        <schema:inLanguage>en</schema:inLanguage>
+        <library:oclcnum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">876558200</library:oclcnum>
+        <schema:datePublished>2007</schema:datePublished>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/xxu"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:contributor rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Person/ruby_sam"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/876558200#PublicationEvent/sebastopol_o_reilly_c2007"/>
+        <schema:copyrightYear>2007</schema:copyrightYear>
+        <schema:numberOfPages>419</schema:numberOfPages>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/876558200"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/876558200">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/876558200"/>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/sebastopol">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Sebastopol</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,124 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:pto="http://www.productontology.org/id/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/xml_langage_de_balisage">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>XML (langage de balisage)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Person/ruby_sam">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Sam Ruby</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Person/richardson_leonard">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Leonard Richardson</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/sites_web_developpement">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Sites Web--Développement</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/paris">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Paris</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/cambridge">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Cambridge</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/004.678/e22/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:description>br</schema:description>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>REST (informatique)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/cc">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>cc</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/493390155">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/493390155"/>
+        <schema:dateModified>2015-07-11</schema:dateModified>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/493390155#PublicationEvent/beijing_cambridge_paris_o_reilly_impr_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/cambridge"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/paris"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>imr. 2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/services_web">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Services Web</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Person/hansson_david_heinemeier">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Hansson</schema:familyName>
+        <schema:givenName>David Heinemeier</schema:givenName>
+        <schema:name>David Heinemeier Hansson</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/html_langage_de_balisage">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>HTML (langage de balisage)</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/493390155">
+        <schema:bookFormat rdf:resource="http://bibliograph.net/PrintBook"/>
+        <schema:author rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Person/richardson_leonard"/>
+        <library:oclcnum>493390155</library:oclcnum>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/cc"/>
+        <schema:name>RESTful Web Services</schema:name>
+        <schema:copyrightYear>2007</schema:copyrightYear>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:datePublished>imr. 2007</schema:datePublished>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/493390155#PublicationEvent/beijing_cambridge_paris_o_reilly_impr_2007"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/html_langage_de_balisage"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/sites_web_developpement"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/services_web"/>
+        <schema:productID>493390155</schema:productID>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/cambridge"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/493390155"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <schema:author rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Person/ruby_sam"/>
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/xml_langage_de_balisage"/>
+        <schema:contributor rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Person/hansson_david_heinemeier"/>
+        <schema:about rdf:resource="http://dewey.info/class/004.678/e22/"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique"/>
+        <schema:inLanguage>en</schema:inLanguage>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/paris"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Beijing</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,96 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:umbel="http://umbel.org/umbel#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:pto="http://www.productontology.org/id/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/cc">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>cc</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/234290815#PublicationEvent/beijing_farnham_o_reilly_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Sam Ruby</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Farnham</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Leonard Richardson</schema:name>
+        <schema:birthDate>1979</schema:birthDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/006.76/e22/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/234290815">
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/234290815"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <library:oclcnum>234290815</library:oclcnum>
+        <schema:url rdf:resource="http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&doc_number=016278962&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA"/>
+        <schema:about rdf:resource="http://dewey.info/class/006.76/e22/"/>
+        <schema:creator rdf:resource="http://viaf.org/viaf/119908940"/>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/234290815#PublicationEvent/beijing_farnham_o_reilly_2007"/>
+        <umbel:isLike rdf:resource="http://bnb.data.bl.uk/id/resource/GBA709991"/>
+        <schema:url rdf:resource="http://swbplus.bsz-bw.de/bsz265585090inh.htm"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:url rdf:resource="http://swbplus.bsz-bw.de/bsz265585090cov.htm"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/cc"/>
+        <schema:inLanguage>en</schema:inLanguage>
+        <schema:about rdf:resource="http://id.worldcat.org/fast/1173242"/>
+        <schema:name xml:lang="en">RESTful web services</schema:name>
+        <umbel:isLike rdf:resource="http://d-nb.info/983487251"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing"/>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/29849197"/>
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:description xml:lang="en">This text teaches programmers how to create web services using the same standards that make the Web so successful. It shows developers how to use the Representational State Transfer web architecture (REST) to provide services over the web that are fundamentally simple.</schema:description>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+        <schema:productID>234290815</schema:productID>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <schema:bookFormat rdf:resource="http://bibliograph.net/PrintBook"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/234290815">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/234290815"/>
+        <schema:dateModified>2015-08-03</schema:dateModified>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Beijing</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.worldcat.org/fast/1173242">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name xml:lang="en">Web services</schema:name>
+    </rdf:Description>
+</rdf:RDF>

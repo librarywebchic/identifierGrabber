@@ -1,0 +1,77 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:pto="http://www.productontology.org/id/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/481822502">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/481822502"/>
+        <schema:dateModified>2015-05-05</schema:dateModified>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/uik">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>uik</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/481822502#PublicationEvent/farnham_o_reilly_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/481822502">
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/481822502#PublicationEvent/farnham_o_reilly_2007"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:bookFormat rdf:resource="http://bibliograph.net/PrintBook"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+        <schema:about rdf:resource="http://dewey.info/class/006.76/e22/"/>
+        <schema:productID>481822502</schema:productID>
+        <schema:name>RESTful web services</schema:name>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <schema:about rdf:resource="http://id.worldcat.org/fast/1173242"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham"/>
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/uik"/>
+        <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/481822502"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:inLanguage>en</schema:inLanguage>
+        <library:oclcnum>481822502</library:oclcnum>
+        <schema:creator rdf:resource="http://viaf.org/viaf/119908940"/>
+        <schema:description>This easy-to-understand reference shows how to use the Representational StateTransfer Web architecture, or REST, to provide services over the Web that arefundamentally simple, both for producers and the consumers.</schema:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/farnham">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Farnham</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Leonard Richardson</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dewey.info/class/006.76/e22/">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:bookFormat rdf:resource="http://schema.org/Paperback"/>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.worldcat.org/fast/1173242">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Web services</schema:name>
+    </rdf:Description>
+</rdf:RDF>

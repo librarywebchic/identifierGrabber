@@ -1,0 +1,82 @@
+<rdf:RDF
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:library="http://purl.org/library/"
+    xmlns:genont="http://www.w3.org/2006/gen/ont#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:schema="http://schema.org/"
+    xmlns:bgn="http://bibliograph.net/" >
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/countries/vp">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <dcterms:identifier>vp</dcterms:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/oclc/768470693">
+        <library:placeOfPublication rdf:resource="http://id.loc.gov/vocabulary/countries/vp"/>
+        <schema:publisher rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <wdrs:describedby rdf:resource="http://www.worldcat.org/title/-/oclc/768470693"/>
+        <rdf:type rdf:resource="http://schema.org/Book"/>
+        <schema:datePublished>2007</schema:datePublished>
+        <schema:inLanguage>en</schema:inLanguage>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/24888522"/>
+        <schema:contributor rdf:resource="http://viaf.org/viaf/29849197"/>
+        <schema:numberOfPages>419</schema:numberOfPages>
+        <schema:publication rdf:resource="http://www.worldcat.org/title/-/oclc/768470693#PublicationEvent/beijing_etc_o_reilly_cop_2007"/>
+        <schema:exampleOfWork rdf:resource="http://worldcat.org/entity/work/id/67201841"/>
+        <schema:about rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Topic/servicios_web"/>
+        <schema:name>RESTful web services</schema:name>
+        <schema:copyrightYear>op.</schema:copyrightYear>
+        <library:oclcnum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768470693</library:oclcnum>
+        <schema:creator rdf:resource="http://viaf.org/viaf/119908940"/>
+        <library:placeOfPublication rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing_etc"/>
+        <schema:workExample rdf:resource="http://worldcat.org/isbn/9780596529260"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Topic/servicios_web">
+        <rdf:type rdf:resource="http://schema.org/Intangible"/>
+        <schema:name>Servicios web.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing_etc">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <schema:name>Beijing etc.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/29849197">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Ruby</schema:familyName>
+        <schema:givenName>Sam</schema:givenName>
+        <schema:name>Ruby, Sam.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/768470693#PublicationEvent/beijing_etc_o_reilly_cop_2007">
+        <rdf:type rdf:resource="http://schema.org/PublicationEvent"/>
+        <schema:location rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Place/beijing_etc"/>
+        <schema:organizer rdf:resource="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly"/>
+        <schema:startDate>co. 2007</schema:startDate>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/119908940">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Richardson</schema:familyName>
+        <schema:givenName>Leonard</schema:givenName>
+        <schema:name>Richardson, Leonard.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://viaf.org/viaf/24888522">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <schema:familyName>Hansson</schema:familyName>
+        <schema:givenName>David Heinemeier</schema:givenName>
+        <schema:name>Hansson, David Heinemeier.</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.worldcat.org/title/-/oclc/768470693">
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#ContentTypeGenericResource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+        <schema:about rdf:resource="http://www.worldcat.org/oclc/768470693"/>
+        <void:inDataset rdf:resource="http://purl.oclc.org/dataset/WorldCat"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://worldcat.org/isbn/9780596529260">
+        <rdf:type rdf:resource="http://schema.org/ProductModel"/>
+        <schema:isbn>9780596529260</schema:isbn>
+        <schema:isbn>0596529260</schema:isbn>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://experiment.worldcat.org/entity/work/data/67201841#Agent/o_reilly">
+        <rdf:type rdf:resource="http://bibliograph.net/Agent"/>
+        <schema:name>O'Reilly</schema:name>
+    </rdf:Description>
+</rdf:RDF>
