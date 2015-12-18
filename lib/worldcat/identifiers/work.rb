@@ -120,7 +120,7 @@ module WorldCat
         work_group_store = self.load_work_group
         # run the SPARQL here to get what we want
         results = SPARQL.execute("SELECT ?isbn WHERE {?s <http://schema.org/isbn> ?isbn.}", work_group_store)
-        isbns = results.map{|result| result.isbns.value}
+        isbns = results.map{|result| result.isbn.value}
       end
       
 

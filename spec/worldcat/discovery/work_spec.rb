@@ -205,8 +205,8 @@ describe WorldCat::Identifiers::Work do
       
       it "should have the right isbns" do
         isbns = @work.isbns
-        isbns.size.should == 26
-        puts isbns.inspect
+        isbns.size.should == 12
+        isbns = ["9787564109608", "7564109602", "9780596529260", "0596529260", "9783897217270", "3897217279", "9782841774487", "2841774481", "9780596554606", "0596554605", "9780596515218", "0596515219"]
       end
     end
     
