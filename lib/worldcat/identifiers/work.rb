@@ -23,14 +23,11 @@ module WorldCat
     #   work.name        # => "Programming Ruby."
     #
     # [subjects] RDF predicate: http://schema.org/about; returns: Enumerable of RDF::URI objects
-    # [alternateName] RDF predicate: http://schema.org/alternateName; returns: String
     # [types] RDF predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type; returns: RDF::URI
     # [authors] RDF predicate: http://schema.org/authors; returns: Enumerable of RDF::URI objects
     # [contributors] RDF predicate: http://schema.org/contributor; returns: Enumerable of RDF::URI objects
     # [creators] RDF predicate: http://schema.org/creator; returns: Enumerable of RDF::URI objects
     # [descriptions] RDF predicate: http://schema.org/description; returns: Enumerable of String objects
-    # [genres] RDF predicate: http://schema.org/genre, returns: Enumerable of RDF::Literal objects
-    # [names] RDF predicate: http://schema.org/name, returns: Enumerable of RDF::Literal objects
     # [work_examples] RDF predicate: http://schema.org/workExample; returns: Enumerable of WorldCat::Discovery::Bib objects
     
     class Work < Spira::Base
@@ -38,14 +35,11 @@ module WorldCat
       attr_accessor :response_body, :response_code, :result
       
       has_many :subjects, :predicate => SCHEMA_ABOUT, :type => RDF::URI
-      # has_many :alternate_name, :predicate => SCHEMA_ALT_NAME, :type => RDF::Literal
       has_many :types, :predicate => RDF.type, :type => RDF::URI
       has_many :authors, :predicate => SCHEMA_AUTHOR, :type => RDF::URI
       has_many :contributors, :predicate => SCHEMA_CONTRIBUTOR, :type => RDF::URI
       has_many :creators, :predicate => SCHEMA_CREATOR, :type => RDF::URI
       has_many :descriptions, :predicate => SCHEMA_DESCRIPTION, :type => XSD.string
-      # has_many :genres, :predicate => SCHEMA_GENRE, :type => RDF::Literal
-      # has_many :names, :predicate => SCHEMA_NAME, :type => RDF::Literal
       has_many :work_examples, :predicate => SCHEMA_WORK_EXAMPLE, :type => 'Bib'
           
       
@@ -58,15 +52,18 @@ module WorldCat
       end
       
       def alternate_names
-        alternative_names = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_ALT_NAME)
+        alternative_name_statements = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_ALT_NAME)
+        alternative_names = alternative_name_statements.map {|statement| statement.object}
       end
       
       def genres
-        genres = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_GENRE)
+        genre_statements = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_GENRE)
+        genres = genre_statements.map {|statement| statement.object}
       end
       
       def names
-        names = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_NAME)
+        name_statements = Spira.repository.query(:subject => self.id, :predicate => SCHEMA_NAME)
+        names = name_statements.map {|statement| statement.object}
       end
       
                        
@@ -84,7 +81,7 @@ module WorldCat
           # Load the data into an in-memory RDF repository, get the GenericResource and its Bib
           Spira.repository = RDF::Repository.new.from_rdfxml(response)
           work_object = Spira.repository.query(:predicate => RDF.type, :object => WORK).first
-          work = work.object.as(Bib)
+          work = work_object.subject.as(Work)
           work.response_body = response
           work.response_code = response.code
           work.result = result

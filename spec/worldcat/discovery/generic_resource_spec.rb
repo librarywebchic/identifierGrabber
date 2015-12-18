@@ -14,7 +14,7 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Discovery::GenericResource do
+describe WorldCat::Identifiers::GenericResource do
   context "when loading a resource from RDF data" do
     before(:all) do
       rdf = body_content("30780581.rdf")
@@ -22,11 +22,11 @@ describe WorldCat::Discovery::GenericResource do
       
       gr_uri  = RDF::URI.new('http://www.w3.org/2006/gen/ont#ContentTypeGenericResource')
       generic_resource = Spira.repository.query(:predicate => RDF.type, :object => gr_uri).first
-      @resource = generic_resource.subject.as(WorldCat::Discovery::GenericResource)
+      @resource = generic_resource.subject.as(WorldCat::Identifiers::GenericResource)
     end
     
     it "should produce have the right class" do 
-      @resource.class.should == WorldCat::Discovery::GenericResource
+      @resource.class.should == WorldCat::Identifiers::GenericResource
     end
     
     it "should reference the Bib with the right subject URI" do

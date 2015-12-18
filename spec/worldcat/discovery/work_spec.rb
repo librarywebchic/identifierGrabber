@@ -22,7 +22,7 @@ describe WorldCat::Identifiers::Work do
       before(:all) do
         url = 'http://worldcat.org/entity/work/id/672018411'
         stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
-        @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/67201841')
+        @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/672018411')
       end
 
       it "should have the right id" do
@@ -45,24 +45,20 @@ describe WorldCat::Identifiers::Work do
       end
       
       it "should have the right alternative_names" do
-        alternative_names = @work.alternative_names
-        alternative_names_values = alternative_names.map {|alternative_name| alternative_name.value}
-        alternative_names_values.should include("REST架构的网络服务")
-        alternative_names_values.should include("REST jia gou de wang luo fu wu")        
-      end
-
-      it "should have the right work URI" do
-        @work.work_uri.should == RDF::URI.new('http://worldcat.org/entity/work/id/45185752')
+        alternate_names = @work.alternate_names
+        alternate_names_values = alternate_names.map {|alternate_name| alternate_name.value}
+        alternate_names_values.should include("REST架构的网络服务")
+        alternate_names_values.should include("REST jia gou de wang luo fu wu")        
       end
 
       it "should have the right types" do
-        @work.types.should == include(RDF::URI.new('http://schema.org/Book'))
-        @work.types.should == include(RDF::URI.new('http://schema.org/CreativeWork'))
+        @work.types.should include(RDF::URI('http://schema.org/Book'))
+        @work.types.should include(RDF::URI('http://schema.org/CreativeWork'))
       end
 
       it "should have the right authors" do
         authors = @work.authors
-        author_uris = authors.map {|author| author.subject}
+        author_uris = authors.map {|author| author.value}
         author_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2637446024'))
         author_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2632695367'))
         author_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2641690132'))
@@ -70,13 +66,13 @@ describe WorldCat::Identifiers::Work do
 
       it "should have the right creators" do
         creators = @work.creators
-        creator_uris = creators.map {|creator| creator.subject}
+        creator_uris = creators.map {|creator| creator.value}
         creator_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2632695367'))
       end
 
       it "should have the right contributors" do
         contributors = @work.contributors
-        contributor_uris = contributors.map {|contributor| contributor.subject}
+        contributor_uris = contributors.map {|contributor| contributor.value}
         contributor_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2641050084'))
         contributor_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2632695367'))
         contributor_uris.should include(RDF::URI('http://worldcat.org/entity/person/id/2651317527'))
@@ -87,11 +83,11 @@ describe WorldCat::Identifiers::Work do
       it "should have the right subjects" do
         subjects = @work.subjects
 
-        subject_ids = subjects.map {|subject| subject.subject}
+        subject_ids = subjects.map {|subject| subject.value}
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmatuurtechniek'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/websites'))
-        subject_ids.should include(RDF::URI(' http://experiment.worldcat.org/entity/work/data/67201841#Topic/conception_web'))
-        subject_ids.should include(RDF::URI(' http://experiment.worldcat.org/entity/work/data/67201841#Topic/architecture_orientee_services'))
+        subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/conception_web'))
+        subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/architecture_orientee_services'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/sites_web_developpement'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/computers_web_web_programming'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/programmierung'))
@@ -99,7 +95,7 @@ describe WorldCat::Identifiers::Work do
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/hojas_de_estilo_en_cascada'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/web_services'))
-        subject_ids.should include(RDF::URI(' http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_architecture_logicielle'))
+        subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_architecture_logicielle'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/html_langage_de_balisage'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique'))
         subject_ids.should include(RDF::URI('http://experiment.worldcat.org/entity/work/data/67201841#Topic/rest_informatique_service_web'))
@@ -170,10 +166,8 @@ describe WorldCat::Identifiers::Work do
       before(:all) do
         url = 'http://worldcat.org/entity/work/id/672018411'
         stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
-        @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/67201841')
+        @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/672018411')
         
-        url = 'http://worldcat.org/entity/work/id/672018411'
-        stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/660967222').to_return(:body => body_content("bib_660967222.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/326799313').to_return(:body => body_content("bib_326799313.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/886700555').to_return(:body => body_content("bib_886700555.rdf"), :status => 200)
@@ -201,10 +195,18 @@ describe WorldCat::Identifiers::Work do
         stub_request(:get, 'http://www.worldcat.org/oclc/439080694').to_return(:body => body_content("bib_439080694.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/840398604').to_return(:body => body_content("bib_840398604.rdf"), :status => 200)
         work_group_store = @work.load_work_group
+      end
         
+      it "should have the right oclc_numbers" do
         oclc_numbers = @work.oclc_numbers
-        
+        oclc_numbers.size.should == 26
+        puts oclc_numbers.inspect
+      end
+      
+      it "should have the right isbns" do
         isbns = @work.isbns
+        isbns.size.should == 26
+        puts isbns.inspect
       end
     end
     
