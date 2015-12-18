@@ -9,6 +9,7 @@ gem 'rdf-rdfxml', '~> 1.1', '>= 1.1.0.1'
 gem 'spira', '~> 0.7', '>= 0.7.1'
 gem 'rest-client', '~> 1.6', '>= 1.6.7'
 gem 'addressable', '~> 2.3', '>= 2.3.6'
+gem 'sparql'
 
 group :development, :test do
   # gem 'rspec', '2.13.0'

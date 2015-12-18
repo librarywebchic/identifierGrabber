@@ -43,6 +43,7 @@ GEM
     mini_portile (0.6.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    net-http-persistent (2.9.4)
     netrc (0.11.0)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
@@ -101,6 +102,17 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
+    sparql (1.99.0)
+      builder (~> 3.2)
+      ebnf (~> 1.0)
+      rdf (~> 1.99)
+      rdf-aggregate-repo (~> 1.99)
+      rdf-xsd (~> 1.1)
+      sparql-client (~> 1.1)
+      sxp (~> 0.1)
+    sparql-client (1.99.0)
+      net-http-persistent (~> 2.9)
+      rdf (~> 1.1)
     spira (0.7.1)
       activemodel (> 3.0)
       activesupport (> 3.0)
@@ -137,6 +149,7 @@ DEPENDENCIES
   rest-client (~> 1.6, >= 1.6.7)
   rspec
   simplecov (~> 0.8)
+  sparql
   spira (~> 0.7, >= 0.7.1)
   spork (= 0.9.2)
 

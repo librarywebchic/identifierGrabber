@@ -5,6 +5,8 @@ require "oclc/auth"
 require 'rest_client'
 require "spira"
 require "addressable/uri"
+require 'rubygems'
+require 'sparql'
 
 require "worldcat/identifiers/version"
 require "worldcat/identifiers/uris"
