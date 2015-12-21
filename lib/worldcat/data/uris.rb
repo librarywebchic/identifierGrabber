@@ -13,7 +13,7 @@
 # limitations under the License.
 
 module WorldCat
-  module Identifiers
+  module Data
     
     RDF_TYPE               = RDF::URI.new('http://www.w3.org/1999/02/22-rdf-syntax-ns#type')
     GENERIC_RESOURCE       = RDF::URI.new('http://www.w3.org/2006/gen/ont#ContentTypeGenericResource')

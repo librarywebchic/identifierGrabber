@@ -14,7 +14,7 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Identifiers::Work do
+describe WorldCat::Data::Work do
   
   context "when loading work data" do
 
@@ -22,7 +22,7 @@ describe WorldCat::Identifiers::Work do
       before(:all) do
         url = 'http://worldcat.org/entity/work/id/672018411'
         stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
-        @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/672018411')
+        @work = WorldCat::Data::Work.find('http://worldcat.org/entity/work/id/672018411')
       end
 
       it "should have the right id" do
@@ -112,7 +112,7 @@ describe WorldCat::Identifiers::Work do
 
       it "should have the right work examples" do
         work_examples = @work.work_examples
-        work_examples.each {|bib| bib.class.should == WorldCat::Identifiers::Bib}
+        work_examples.each {|bib| bib.class.should == WorldCat::Data::Bib}
 
         work_example_uris = work_examples.map {|bib| bib.id}
         work_example_uris.should include(RDF::URI('http://www.worldcat.org/oclc/660967222'))
@@ -166,7 +166,7 @@ describe WorldCat::Identifiers::Work do
       before(:all) do
         url = 'http://worldcat.org/entity/work/id/672018411'
         stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
-        @work = WorldCat::Identifiers::Work.find('http://worldcat.org/entity/work/id/672018411')
+        @work = WorldCat::Data::Work.find('http://worldcat.org/entity/work/id/672018411')
         
         stub_request(:get, 'http://www.worldcat.org/oclc/717007464').to_return(:body => body_content("717007464.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/660967222').to_return(:body => body_content("660967222.rdf"), :status => 200)

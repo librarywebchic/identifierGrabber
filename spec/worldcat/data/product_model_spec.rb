@@ -14,30 +14,30 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Identifiers::Subject do
+describe WorldCat::Data::ProductModel do
   context "when loading an author as a Person resource from RDF data" do
     before(:all) do
       rdf = body_content("30780581.rdf")
       Spira.repository = RDF::Repository.new.from_rdfxml(rdf)
       
-      philosophy = RDF::URI.new('http://id.worldcat.org/fast/1060777')
-      @subject = philosophy.as(WorldCat::Identifiers::Subject)
+      philosophy = RDF::URI.new('http://worldcat.org/isbn/9780631193623')
+      @product_model = philosophy.as(WorldCat::Data::ProductModel)
     end
     
     it "should produce have the right class" do 
-      @subject.class.should == WorldCat::Identifiers::Subject
+      @product_model.class.should == WorldCat::Data::ProductModel
     end
-    
-    it "should have the right name" do
-      @subject.name.should == 'Philosophy.'
-    end
-    
+        
     it "should have the right id" do
-      @subject.id.should == 'http://id.worldcat.org/fast/1060777'
+      @product_model.id.should == 'http://worldcat.org/isbn/9780631193623'
     end
     
     it "should have the right type" do
-      @subject.type.should == 'http://schema.org/Intangible'
+      @product_model.type.should == 'http://schema.org/ProductModel'
+    end
+    
+    it "should have the right ISBN" do
+      @product_model.isbn.should == '9780631193623'
     end
   end
 end

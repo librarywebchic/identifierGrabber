@@ -14,30 +14,23 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Identifiers::ProductModel do
-  context "when loading an author as a Person resource from RDF data" do
+describe WorldCat::Data::GenericResource do
+  context "when loading a resource from RDF data" do
     before(:all) do
       rdf = body_content("30780581.rdf")
       Spira.repository = RDF::Repository.new.from_rdfxml(rdf)
       
-      philosophy = RDF::URI.new('http://worldcat.org/isbn/9780631193623')
-      @product_model = philosophy.as(WorldCat::Identifiers::ProductModel)
+      gr_uri  = RDF::URI.new('http://www.w3.org/2006/gen/ont#ContentTypeGenericResource')
+      generic_resource = Spira.repository.query(:predicate => RDF.type, :object => gr_uri).first
+      @resource = generic_resource.subject.as(WorldCat::Data::GenericResource)
     end
     
     it "should produce have the right class" do 
-      @product_model.class.should == WorldCat::Identifiers::ProductModel
-    end
-        
-    it "should have the right id" do
-      @product_model.id.should == 'http://worldcat.org/isbn/9780631193623'
+      @resource.class.should == WorldCat::Data::GenericResource
     end
     
-    it "should have the right type" do
-      @product_model.type.should == 'http://schema.org/ProductModel'
-    end
-    
-    it "should have the right ISBN" do
-      @product_model.isbn.should == '9780631193623'
+    it "should reference the Bib with the right subject URI" do
+      @resource.about.subject.should == 'http://www.worldcat.org/oclc/30780581'
     end
   end
 end

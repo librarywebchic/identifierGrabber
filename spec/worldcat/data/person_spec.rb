@@ -14,7 +14,7 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Identifiers::Person do
+describe WorldCat::Data::Person do
   context "when loading an author as a Person resource from RDF data" do
     before(:all) do
       rdf = body_content("30780581.rdf")
@@ -22,12 +22,12 @@ describe WorldCat::Identifiers::Person do
       
       gr_uri  = RDF::URI.new('http://www.w3.org/2006/gen/ont#ContentTypeGenericResource')
       generic_resource = Spira.repository.query(:predicate => RDF.type, :object => gr_uri).first
-      resource = generic_resource.subject.as(WorldCat::Identifiers::GenericResource)
-      @person = resource.about.author.subject.as(WorldCat::Identifiers::Person)
+      resource = generic_resource.subject.as(WorldCat::Data::GenericResource)
+      @person = resource.about.author.subject.as(WorldCat::Data::Person)
     end
     
     it "should produce have the right class" do 
-      @person.class.should == WorldCat::Identifiers::Person
+      @person.class.should == WorldCat::Data::Person
     end
     
     it "should have the right name" do

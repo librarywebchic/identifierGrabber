@@ -13,7 +13,7 @@
 # limitations under the License.
 
 module WorldCat
-  module Identifiers
+  module Data
     
     # == Properties mapped from RDF data
     #
@@ -68,14 +68,14 @@ module WorldCat
       
                        
       # call-seq:
-      #   find(work_uri) => WorldCat::Identifiers::Work
+      #   find(work_uri) => WorldCat::Data::Work
       # 
       # Returns a Work resource for the given Work URI
       #
       # [work_uri] the URI for a bibliographic resource in WorldCat
       def self.find(work_uri)
         url = work_uri
-        response, result = WorldCat::Identifiers.get_data(url)
+        response, result = WorldCat::Data.get_data(url)
         
         if result.class == Net::HTTPOK
           # Load the data into an in-memory RDF repository, get the GenericResource and its Bib
@@ -101,7 +101,7 @@ module WorldCat
         ## load all the data from the OCLC Numbers in the work into the graph
         work_group_store = RDF::Repository.new.from_rdfxml(self.response_body)
         self.work_examples.each{|work_example|
-          #response, result = WorldCat::Identifiers.get_data(work_example.id.to_s) 
+          #response, result = WorldCat::Data.get_data(work_example.id.to_s) 
           # there might be a different way to do this to loop through the statements and add them to the graph
           work_group_store.load(work_example.id.to_s)
         }

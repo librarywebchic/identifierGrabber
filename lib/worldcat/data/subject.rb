@@ -13,21 +13,28 @@
 # limitations under the License.
 
 module WorldCat
-  module Identifiers 
+  module Data 
     
     # == Properties mapped from RDF data
     #
     # RDF properties are mapped via an ORM style mapping.
     # 
-    # [name] RDF predicate: http:/schema.org/name; returns: String 
-    # [parts] RDF predicate: http://schema.org/hasPart; returns: Enumerable of WorldCat::Discovery::Bib objects
+    # [type] RDF predicate: http://www.w3.org/1999/02/22-rdf-syntax-ns#type; returns: RDF::URI
+    # [name] RDF predicate: http://schema.org/name; returns: String
     
-    class Series < Spira::Base
+    class Subject < Spira::Base
       
       property :name, :predicate => SCHEMA_NAME, :type => XSD.string
-      property :creator, :predicate => SCHEMA_CREATOR, :type => 'Person'
-      has_many :parts, :predicate => SCHEMA_HAS_PART, :type => 'Bib'
-
+      property :type, :predicate => RDF.type, :type => RDF::URI
+      
+      # call-seq:
+      #   id() => RDF::URI
+      # 
+      # Will return the RDF::URI object that serves as the RDF subject of the current Subject
+      def id
+        self.subject
+      end
+      
     end
   end
 end

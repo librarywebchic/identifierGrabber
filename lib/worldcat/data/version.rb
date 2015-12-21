@@ -13,16 +13,7 @@
 # limitations under the License.
 
 module WorldCat
-  module Identifiers
-    
-    # A generic resource corresponding to the document representing a bibliographic resource. 
-    # This class should not be used by clients, rather WorldCat::Discovery::Bib objects should
-    # be used instead.
-    
-    class GenericResource < Spira::Base
-      
-      property :about, :predicate => SCHEMA_ABOUT, :type => 'Bib'
-      
-    end
+  module Data
+    VERSION = "0.1"
   end
 end

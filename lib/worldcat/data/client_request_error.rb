@@ -13,7 +13,7 @@
 # limitations under the License.
 
 module WorldCat
-  module Identifiers
+  module Data
     class ClientRequestError
       
       attr_accessor :response_body, :response_code, :result

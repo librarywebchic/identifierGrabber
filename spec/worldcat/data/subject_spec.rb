@@ -14,23 +14,30 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Identifiers::GenericResource do
-  context "when loading a resource from RDF data" do
+describe WorldCat::Data::Subject do
+  context "when loading an author as a Person resource from RDF data" do
     before(:all) do
       rdf = body_content("30780581.rdf")
       Spira.repository = RDF::Repository.new.from_rdfxml(rdf)
       
-      gr_uri  = RDF::URI.new('http://www.w3.org/2006/gen/ont#ContentTypeGenericResource')
-      generic_resource = Spira.repository.query(:predicate => RDF.type, :object => gr_uri).first
-      @resource = generic_resource.subject.as(WorldCat::Identifiers::GenericResource)
+      philosophy = RDF::URI.new('http://id.worldcat.org/fast/1060777')
+      @subject = philosophy.as(WorldCat::Data::Subject)
     end
     
     it "should produce have the right class" do 
-      @resource.class.should == WorldCat::Identifiers::GenericResource
+      @subject.class.should == WorldCat::Data::Subject
     end
     
-    it "should reference the Bib with the right subject URI" do
-      @resource.about.subject.should == 'http://www.worldcat.org/oclc/30780581'
+    it "should have the right name" do
+      @subject.name.should == 'Philosophy.'
+    end
+    
+    it "should have the right id" do
+      @subject.id.should == 'http://id.worldcat.org/fast/1060777'
+    end
+    
+    it "should have the right type" do
+      @subject.type.should == 'http://schema.org/Intangible'
     end
   end
 end

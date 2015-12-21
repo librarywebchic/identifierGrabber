@@ -14,7 +14,7 @@
 
 require_relative '../../spec_helper'
 
-describe WorldCat::Identifiers::Bib do
+describe WorldCat::Data::Bib do
   
   context "when loading bibliographic data" do
 
@@ -22,7 +22,7 @@ describe WorldCat::Identifiers::Bib do
       before(:all) do
         url = 'http://worldcat.org/oclc/30780581'
         stub_request(:get, url).to_return(:body => body_content("30780581.rdf"), :status => 200)
-        @bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/30780581')
+        @bib = WorldCat::Data::Bib.find('http://worldcat.org/oclc/30780581')
       end
 
       it "should have the right id" do
@@ -64,25 +64,25 @@ describe WorldCat::Identifiers::Bib do
       end
 
       it "should have the right author" do
-        @bib.author.class.should == WorldCat::Identifiers::Person
+        @bib.author.class.should == WorldCat::Data::Person
         @bib.author.name.should == "Wittgenstein, Ludwig, 1889-1951."
       end
 
       it "should have the right publisher" do
-        @bib.publisher.class.should == WorldCat::Identifiers::Organization
+        @bib.publisher.class.should == WorldCat::Data::Organization
         @bib.publisher.name.should == "B. Blackwell"
       end
 
       it "should have the right contributors" do
         @bib.contributors.size.should == 1
         contributor = @bib.contributors.first
-        contributor.class.should == WorldCat::Identifiers::Person
+        contributor.class.should == WorldCat::Data::Person
         contributor.name.should == "Kenny, Anthony, 1931-"
       end
 
       it "should have the right subjects" do
         subjects = @bib.subjects
-        subjects.each {|subject| subject.class.should == WorldCat::Identifiers::Subject}
+        subjects.each {|subject| subject.class.should == WorldCat::Data::Subject}
 
         subject_ids = subjects.map {|subject| subject.id}
         subject_ids.should include(RDF::URI('http://dewey.info/class/192/e20/'))
@@ -101,7 +101,7 @@ describe WorldCat::Identifiers::Bib do
 
       it "should have the right work examples" do
         work_examples = @bib.work_examples
-        work_examples.each {|product_model| product_model.class.should == WorldCat::Identifiers::ProductModel}
+        work_examples.each {|product_model| product_model.class.should == WorldCat::Data::ProductModel}
 
         work_example_uris = work_examples.map {|product_model| product_model.id}
         work_example_uris.should include(RDF::URI('http://worldcat.org/isbn/9780631193616'))
@@ -116,7 +116,7 @@ describe WorldCat::Identifiers::Bib do
           p = place if place.id == RDF::URI('http://experiment.worldcat.org/entity/work/data/45185752#Place/oxford_uk')
           p
         end
-        oxford.class.should == WorldCat::Identifiers::Place
+        oxford.class.should == WorldCat::Data::Place
         oxford.type.should == 'http://schema.org/Place'
         oxford.name.should == 'Oxford, UK'
 
@@ -126,12 +126,12 @@ describe WorldCat::Identifiers::Bib do
           end
           p
         end
-        cambridge.class.should == WorldCat::Identifiers::Place
+        cambridge.class.should == WorldCat::Data::Place
         cambridge.type.should == 'http://schema.org/Place'
         cambridge.name.should == 'Cambridge, Mass., USA'
 
         england = places_of_publication.reduce(nil) {|p, place| p = place if place.id == RDF::URI('http://id.loc.gov/vocabulary/countries/enk'); p}
-        england.class.should == WorldCat::Identifiers::Place
+        england.class.should == WorldCat::Data::Place
         england.type.should == 'http://schema.org/Place'      
       end
 
@@ -153,7 +153,7 @@ describe WorldCat::Identifiers::Bib do
       before(:all) do
         url = 'http://worldcat.org/oclc/57422379'
         stub_request(:get, url).to_return(:body => body_content("57422379.rdf"), :status => 200)
-        @bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/57422379')
+        @bib = WorldCat::Data::Bib.find('http://worldcat.org/oclc/57422379')
       end
 
       it "should have the right book edition" do
@@ -175,7 +175,7 @@ describe WorldCat::Identifiers::Bib do
       it "should handle books with no author" do
         url = 'http://worldcat.org/oclc/45621749'
         stub_request(:get, url).to_return(:body => body_content("45621749.rdf"), :status => 200)
-        bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/45621749')
+        bib = WorldCat::Data::Bib.find('http://worldcat.org/oclc/45621749')
 
         bib.author.should == nil
       end
@@ -183,9 +183,9 @@ describe WorldCat::Identifiers::Bib do
       it "should handle authors that are organizations" do
         url = 'http://worldcat.org/oclc/233192257'
         stub_request(:get, url).to_return(:body => body_content("233192257.rdf"), :status => 200)
-        bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/233192257')
+        bib = WorldCat::Data::Bib.find('http://worldcat.org/oclc/233192257')
 
-        bib.author.class.should == WorldCat::Identifiers::Organization
+        bib.author.class.should == WorldCat::Data::Organization
         bib.author.name.should == "United States. National Park Service."
       end
     end
@@ -194,9 +194,9 @@ describe WorldCat::Identifiers::Bib do
       it "should have the correct author data" do
         url = 'http://worldcat.org/oclc/30780581'
         stub_request(:get, url).to_return(:body => body_content("30780581-v1.rdf"), :status => 200)
-        bib = WorldCat::Identifiers::Bib.find('http://worldcat.org/oclc/30780581')
+        bib = WorldCat::Data::Bib.find('http://worldcat.org/oclc/30780581')
 
-        bib.author.class.should == WorldCat::Identifiers::Person
+        bib.author.class.should == WorldCat::Data::Person
         bib.author.name.should == "Wittgenstein, Ludwig, 1889-1951."
       end
     end
