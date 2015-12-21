@@ -101,9 +101,14 @@ module WorldCat
         ## load all the data from the OCLC Numbers in the work into the graph
         work_group_store = RDF::Repository.new.from_rdfxml(self.response_body)
         self.work_examples.each{|work_example|
-          #response, result = WorldCat::Data.get_data(work_example.id.to_s) 
-          # there might be a different way to do this to loop through the statements and add them to the graph
-          work_group_store.load(work_example.id.to_s)
+          response, result = WorldCat::Data.get_data(work_example.id.to_s) 
+          RDF::Reader.for(:rdfxml).new(response) do |reader|
+            reader.each_statement do |statement|
+              work_group_store.insert(statement)
+            end
+          end
+          #another way to load the data if it isn't open
+          #work_group_store.load(work_example.id.to_s)
         }
         work_group_store
         
