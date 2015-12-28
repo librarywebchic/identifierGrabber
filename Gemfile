@@ -25,6 +25,7 @@ end
 
 group :test do
   gem 'rspec'
+  gem 'webmock', '~> 1.16'
   gem 'rack-test'
   
   gem 'capybara', '1.1.2'
