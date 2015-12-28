@@ -128,6 +128,24 @@ module WorldCat
         isbns = results.map{|result| result.isbn.value}
       end
       
+      def editions
+        work_group_store = self.load_work_group
+        # run the SPARQL here to get what we want
+        results = SPARQL.execute("SELECT ?edition WHERE {?s <http://schema.org/bookEdition> ?edition.}", work_group_store)
+        editions = results.map{|result| result.edition.value}
+      end
+      
+      def formats(bibLevel=false)
+        work_group_store = self.load_work_group
+        # run the SPARQL here to get what we want
+        if bibLevel
+          results = SPARQL.execute("SELECT DISTINCT ?format WHERE {?s a <http://schema.org/CreativeWork>. ?s <http://schema.org/bookFormat> ?format.}", work_group_store)
+        else
+          results = SPARQL.execute("SELECT DISTINCT ?format WHERE {?s <http://schema.org/bookFormat> ?format.}", work_group_store)
+        end
+        editions = results.map{|result| result.format.value}
+      end
+      
 
     end
   end

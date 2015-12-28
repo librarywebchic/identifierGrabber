@@ -163,7 +163,7 @@ describe WorldCat::Data::Work do
     end
     
     context "from a single resource from the RDF data for RESTful web services" do
-      before(:all) do
+      before(:each) do
         url = 'http://worldcat.org/entity/work/id/672018411'
         stub_request(:get, url).to_return(:body => body_content("work_67201841.rdf"), :status => 200)
         @work = WorldCat::Data::Work.find('http://worldcat.org/entity/work/id/672018411')
@@ -191,7 +191,7 @@ describe WorldCat::Data::Work do
         stub_request(:get, 'http://www.worldcat.org/oclc/82671871').to_return(:body => body_content("82671871.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/754004270').to_return(:body => body_content("754004270.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/850798262').to_return(:body => body_content("850798262.rdf"), :status => 200)
-        stub_request(:get, 'http://www.worldcat.org/oclc/768120530').to_return(:body => body_content("717007464.rdf"), :status => 200)
+        stub_request(:get, 'http://www.worldcat.org/oclc/717007464').to_return(:body => body_content("717007464.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/768120530').to_return(:body => body_content("768120530.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/439080694').to_return(:body => body_content("439080694.rdf"), :status => 200)
         stub_request(:get, 'http://www.worldcat.org/oclc/840398604').to_return(:body => body_content("840398604.rdf"), :status => 200)
@@ -200,14 +200,33 @@ describe WorldCat::Data::Work do
       it "should have the right oclc_numbers" do
         oclc_numbers = @work.oclc_numbers
         oclc_numbers.size.should == 25
-        oclc_numbers = ["660967222", "82671871", "326799313", "886700555", "431591368", "188235414", "234290815", "718524646", "154684429", "756523287", "421705147", "481822502", "886581845", "804438865", "493390155", "876558200", "884006311", "768470693", "354466211", "754004270", "850798262", "717007464", "768120530", "439080694", "840398604"]        
+        oclc_numbers.should == ["660967222", "82671871", "326799313", "886700555", "431591368", "188235414", "234290815", "718524646", "154684429", "756523287", "421705147", "481822502", "886581845", "804438865", "493390155", "876558200", "884006311", "768470693", "354466211", "754004270", "850798262", "717007464", "768120530", "439080694", "840398604"]        
       end
       
       it "should have the right isbns" do
         isbns = @work.isbns
         isbns.size.should == 12
-        isbns = ["9787564109608", "7564109602", "9780596529260", "0596529260", "9783897217270", "3897217279", "9782841774487", "2841774481", "9780596554606", "0596554605", "9780596515218", "0596515219"]
+        isbns.should == ["9787564109608", "7564109602", "9780596529260", "0596529260", "9783897217270", "3897217279", "9782841774487", "2841774481", "9780596554606", "0596554605", "9780596515218", "0596515219"]
       end
+      
+      it "should have the right editions" do
+        editions = @work.editions
+        editions.size.should == 4
+        editions.should == ["Di 1 ban, ying yin ban.", "Dt. Ausg., 1. Aufl.", "1. Aufl.", "1st ed."]
+      end
+      
+      it "should have the right formats" do
+        formats = @work.formats
+        formats.size.should == 3
+        formats.should == ["http://bibliograph.net/PrintBook", "http://schema.org/Paperback", "http://schema.org/EBook"]
+      end
+      
+      it "should have the right bibLevel formats" do
+        formats = @work.formats(true)
+        formats.size.should == 2
+        formats.should == ["http://bibliograph.net/PrintBook", "http://schema.org/EBook"]
+      end
+      
     end
     
   end
