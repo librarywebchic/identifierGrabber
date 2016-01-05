@@ -179,11 +179,56 @@ module WorldCat
         end
       end
       
+      # call-seq:
+      #   find_by_isbn(isbn) => WorldCat::Data::Bib
+      # 
+      # Returns a Bib resource for the given ISBN
+      #
+      # [isbn] the ISBN for a bibliographic resource in WorldCat
+      def self.find_by_isbn(isbn)
+        url = "http://www.worldcat.org/isbn/#{isbn}"
+        response, result = WorldCat::Data.get_data(url)
+        if result.class == Net::HTTPSeeOther
+          title_url = response.headers[:location]
+          oclc_number = URI(title_url).path.split('/').last
+          bib_url = "http://worldcat.org/oclc/#{oclc_number}"
+          self.find(bib_url)
+        else
+          client_request_error = ClientRequestError.new
+          client_request_error.response_body = response
+          client_request_error.response_code = response.code
+          client_request_error.result = result
+          client_request_error          
+        end
+      end
+      
+      # call-seq:
+      #   find_by_issn(issn) => WorldCat::Data::Bib
+      # 
+      # Returns a Bib resource for the given ISSN
+      #
+      # [issn] the ISSN for a bibliographic resource in WorldCat
+      def self.find_by_issn(issn)
+        url = "http://www.worldcat.org/issn/#{issn}"
+        response, result = WorldCat::Data.get_data(url)
+        if result.class == Net::HTTPSeeOther
+          title_url = response.headers[:location]
+          oclc_number = URI(title_url).path.split('/').last
+          bib_url = "http://worldcat.org/oclc/#{oclc_number}"
+          self.find(bib_url)
+        else
+          client_request_error = ClientRequestError.new
+          client_request_error.response_body = response
+          client_request_error.response_code = response.code
+          client_request_error.result = result
+          client_request_error          
+        end
+      end      
+      
       def self.loadWork
         WorldCat::Identifiers::Work.find(work_uri);
         WorldCat::Identifiers::Work.loadWorkGroup();
       end
-      
 
     end
   end

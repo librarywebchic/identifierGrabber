@@ -200,5 +200,40 @@ describe WorldCat::Data::Bib do
         bib.author.name.should == "Wittgenstein, Ludwig, 1889-1951."
       end
     end
+    
+    context "by the data's ISBN" do
+      before(:all) do
+        stub_request(:get, "http://www.worldcat.org/isbn/0631193618").to_return(:body => "", :status => 303, :headers => {Location: "http://www.worldcat.org/title/wittgenstein-reader/oclc/30780581"
+})
+        stub_request(:get, "http://worldcat.org/oclc/30780581").to_return(:body => body_content("30780581.rdf"), :status => 200)
+        @bib = WorldCat::Data::Bib.find_by_isbn('0631193618')
+      end
+      
+      it "should have the right id" do
+        @bib.id.should == "http://www.worldcat.org/oclc/30780581"
+      end
+
+      it "should have the right name" do
+        @bib.name.should == "The Wittgenstein reader"
+      end
+    end
+
+    context "by the data's ISSN" do
+      before(:all) do
+        stub_request(:get, "http://www.worldcat.org/issn/0099-1333").to_return(:body => "", :status => 303, :headers => {Location: "http://www.worldcat.org/title/journal-of-academic-librarianship/oclc/2243594"
+})
+        stub_request(:get, "http://worldcat.org/oclc/2243594").to_return(:body => body_content("2243594.rdf"), :status => 200)
+        @bib = WorldCat::Data::Bib.find_by_issn('0099-1333')
+      end
+    
+      it "should have the right id" do
+        @bib.id.should == "http://www.worldcat.org/oclc/2243594"
+      end
+
+      it "should have the right name" do
+        @bib.name.should == "Journal of academic librarianship."
+      end
+    end        
+    
   end
 end

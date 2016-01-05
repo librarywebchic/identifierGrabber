@@ -107,7 +107,7 @@ module WorldCat
               work_group_store.insert(statement)
             end
           end
-          #another way to load the data if it isn't open
+          #another way to load the data if it is open
           #work_group_store.load(work_example.id.to_s)
         }
         work_group_store
