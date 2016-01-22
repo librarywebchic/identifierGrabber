@@ -146,6 +146,30 @@ module WorldCat
         editions = results.map{|result| result.format.value}
       end
       
+      def manifestation_info_graph
+        work_group_store = self.load_work_group
+        # run the SPARQL here to get what we want
+        query = "PREFIX schema: <http://schema.org/> 
+        
+        CONSTRUCT
+        {
+        <#{self.id}> schema:workExample ?bib.
+        ?bib schema:workExample ?productModel.
+        ?productModel schema:isbn ?isbn.
+        ?productModel schema:bookFormat ?format.
+        ?bib schema:bookEdition ?edition
+        }
+         
+        WHERE {
+        <#{self.id}> schema:workExample ?bib.
+        ?bib schema:workExample ?productModel. ?productModel schema:isbn ?isbn.
+        OPTIONAL {?productModel schema:bookFormat ?format.}
+        OPTIONAL {?bib schema:bookEdition ?edition}
+        }"
+        graph = SPARQL.execute(query, work_group_store)
+        
+      end
+      
 
     end
   end

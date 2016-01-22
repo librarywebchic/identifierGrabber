@@ -227,6 +227,21 @@ describe WorldCat::Data::Work do
         formats.should == ["http://bibliograph.net/PrintBook", "http://schema.org/EBook"]
       end
       
+      it "should return a work group" do
+        work_group_graph = @work.manifestation_info_graph
+        work_group_graph.class.should == RDF::Graph
+        work_group_graph.count.should == 67
+        
+        mock_graph_file = File.open("#{File.expand_path(File.dirname(__FILE__))}/../../support/text/67201841_workgroup.nt")
+        
+        RDF::Reader.for(:ntriples).new(mock_graph_file.read) do |reader|
+          reader.each_statement do |statement|
+            work_group_graph.has_statement?(statement) == true
+          end
+        end
+
+      end
+      
     end
     
   end
