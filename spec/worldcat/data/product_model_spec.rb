@@ -39,5 +39,11 @@ describe WorldCat::Data::ProductModel do
     it "should have the right ISBN" do
       @product_model.isbn.should == '9780631193623'
     end
+    
+    it "should have the right bib" do
+      @product_model.bib.class.should == WorldCat::Data::Bib
+      @product_model.bib.id.should == "http://www.worldcat.org/oclc/30780581"
+      @product_model.bib.name.should == "The Wittgenstein reader"
+    end
   end
 end

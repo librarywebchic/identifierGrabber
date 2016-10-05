@@ -47,6 +47,11 @@ module WorldCat
         SCHEMA_PRODUCT_MODEL
       end
       
+      def bib
+        bib_stmt = Spira.repository.query(:object => self.id, :predicate => SCHEMA_WORK_EXAMPLE).first
+        bib = bib_stmt.subject.as(Bib)
+      end
+      #form year language edition
     end
   end
 end
